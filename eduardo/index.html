@@ -90,17 +90,21 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        .imagem {
-            min-height: 500px;
-            background: var(--verde-escuro);
-        }
+	.imagem {
+	    background: var(--verde-escuro);
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 20px;
+	}
 
-        .imagem img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-        }
+	.imagem img {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	    max-height: 760px;
+	    object-fit: contain;
+	}
 
         .conteudo {
             padding: 48px;
